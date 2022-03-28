@@ -1,3 +1,6 @@
+import modulefinder
+
+
 def longest_word(filename):
     with open(filename, "r", encoding="utf-8") as file:
         text = file.read().split()
@@ -49,8 +52,48 @@ if not file.closed:
 def count_words(filename):
     f = open(filename, "r", encoding="utf-8")
     word_list = f.read().split()
-    print(word_list)
+    print(len(word_list))
 
 count_words("sonety.txt")
 
+#Zliczanie co siódmej liniki tekstu
+def count_7_words(filename):
+    f = open(filename, "r", encoding="utf-8")
+    lines = f.readlines()
+    count = 0
+    for i in lines:
+        if count%7 == 0:
+            print("W linijce ", count, "jest ", len((i.split())), " słów")
+        count += 1
 
+count_7_words("sonety.txt")
+
+
+def c_seven(filename):
+    f = open(filename, 'r', encoding="utf-8")
+    alllines = f.readlines()
+    for i in range(0, len(alllines), 7):
+        print("w linijce ", i, "jest ", len(alllines[i].split()), "słów")
+
+
+c_seven('sonety.txt')
+
+import os
+os.system("ls")
+
+import math
+# os.system("dir")    # Windows
+math.pi
+
+from time import sleep
+print("Dobranoc")
+sleep(2)
+print("Dzień dobry")
+
+import os
+print (dir(os))
+
+
+import math
+print (dir(math))
+math.sin(1)
