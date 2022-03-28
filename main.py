@@ -97,3 +97,10 @@ print (dir(os))
 import math
 print (dir(math))
 math.sin(1)
+
+from math import sin
+print(sin(1))
+
+#tworzenie własnego modułu
+
+import fruit
