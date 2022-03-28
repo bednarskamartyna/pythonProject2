@@ -104,3 +104,8 @@ print(sin(1))
 #tworzenie własnego modułu
 
 import fruit
+
+fruit.lemon(6)
+
+import Flask
+dir(Flask)
