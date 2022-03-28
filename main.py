@@ -107,5 +107,6 @@ import fruit
 
 fruit.lemon(6)
 
-import Flask
+import F
 dir(Flask)
+
