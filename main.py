@@ -1,5 +1,7 @@
 import modulefinder
 
+from flask import Flask
+
 
 def longest_word(filename):
     with open(filename, "r", encoding="utf-8") as file:
@@ -107,6 +109,7 @@ import fruit
 
 fruit.lemon(6)
 
-import F
-dir(Flask)
+import flask
+print(dir(flask))
+
 
